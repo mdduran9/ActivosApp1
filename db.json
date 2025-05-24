@@ -1,0 +1,43 @@
+{
+  "activos": [
+    {
+      "id": 1,
+      "nombre": "Laptop Dell",
+      "categoria": "Tecnología",
+      "area": "TI",
+      "custodio": "Carlos Pérez",
+      "fechaAdquisicion": "2022-04-15",
+      "valor": 2500000,
+      "estado": "Activo"
+    },
+    {
+      "id": 2,
+      "nombre": "Escritorio Roble",
+      "categoria": "Mobiliario",
+      "area": "Administración",
+      "custodio": "Luisa Gómez",
+      "fechaAdquisicion": "2021-09-10",
+      "valor": 600000,
+      "estado": "Trasladado"
+    },
+    {
+      "id": 3,
+      "nombre": "Televisor",
+      "categoria": "Tecnología",
+      "area": "Administración",
+      "custodio": "Ashlam Duran",
+      "fechaAdquisicion": "2023-07-20",
+      "valor": 550000,
+      "estado": "Activo"
+    }
+  ],
+  "movimientos": [
+    {
+      "id": 1,
+      "activoId": 1,
+      "fecha": "2023-03-01",
+      "accion": "traslado",
+      "destino": "Sala de juntas"
+    }
+  ]
+}
