@@ -1,19 +1,44 @@
 <div class="container mt-4">
   <h2 class="mb-3">Lista de Activos</h2>
-  <table class="table table-striped table-bordered">
-    <thead class="table-dark">
+
+
+  <div class="row mb-3">
+    <div class="col-md-4 mb-2">
+      <input type="text" class="form-control" [(ngModel)]="search" (keyup)="obtenerActivos()" placeholder="Filtros..."/>
+    </div>
+    <table class="table table-striped table-bordered">
+      <thead class="table-dark">
       <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>Categoría</th>
-        <th>Área</th>
-        <th>Custodio</th>
-        <th>Fecha de Adquisición</th>
-        <th>Valor</th>
-        <th>Estado</th>
+        <th class="pointer" (click)="cambiarOrden('id')">ID
+          <mat-icon class="pt-1">filter_list</mat-icon>
+        </th>
+        <th class="pointer" (click)="cambiarOrden('nombre')">Nombre
+          <mat-icon class="pt-1">filter_list</mat-icon>
+        </th>
+        <th class="pointer" (click)="cambiarOrden('categoria')">Categoría
+          <mat-icon class="pt-1">filter_list</mat-icon>
+        </th>
+        <th class="pointer" (click)="cambiarOrden('area')">Área
+          <mat-icon class="pt-1">filter_list</mat-icon>
+        </th>
+        <th class="pointer" (click)="cambiarOrden('custodio')">Custodio
+          <mat-icon class="pt-1">filter_list</mat-icon>
+        </th>
+        <th class="pointer" (click)="cambiarOrden('fechaAdquisicion')">Fecha de Adquisición
+          <mat-icon class="pt-1">filter_list</mat-icon>
+        </th>
+        <th class="pointer" (click)="cambiarOrden('valor')">Valor
+          <mat-icon class="pt-1">filter_list</mat-icon>
+        </th>
+        <th class="pointer" (click)="cambiarOrden('estado')">Estado
+          <mat-icon class="pt-1">filter_list</mat-icon>
+        </th>
+
+        <th>
+        </th>
       </tr>
-    </thead>
-    <tbody>
+      </thead>
+      <tbody>
       <tr *ngFor="let activo of listado">
         <td>{{ activo.id }}</td>
         <td>{{ activo.nombre }}</td>
@@ -23,7 +48,45 @@
         <td>{{ activo.fechaAdquisicion | date:'yyyy-MM-dd' }}</td>
         <td>{{ activo.valor | currency:'COP':'symbol':'1.0-0' }}</td>
         <td>{{ activo.estado }}</td>
+        <td>
+          <button class="btn btn-warning btn-sm ">
+            <mat-icon class="icon-display">edit</mat-icon>
+          </button>
+          <button (click)="abrirModal(activo)" class="btn btn-danger btn-sm mx-1">
+            <mat-icon class="icon-display">delete</mat-icon>
+          </button>
+          <button class="btn btn-danger btn-sm">
+            <mat-icon class="icon-display">delete</mat-icon>
+          </button>
+        </td>
       </tr>
-    </tbody>
-  </table>
+      </tbody>
+    </table>
+    <app-pagination [limite]="limite"
+                    [paginaActual]="paginaActual"
+                    [total]="totalActivos"
+                    (paginaCambiada)="onPaginaCambiada($event)"
+    />
+
+    <div class="modal-backdrop" *ngIf="registroSeleccionado">
+      <div class="modal">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Desea dar de baja a este activo?</h2>
+
+              <p>Nombre: {{ registroSeleccionado!!.nombre }}</p>
+              <p>Categoría: {{ registroSeleccionado!!.categoria }}</p>
+              <p>Área: {{ registroSeleccionado!!.area }}</p>
+              <p>Custodio: {{ registroSeleccionado!!.custodio }}</p>
+              <p>Fecha de adquisición: {{ registroSeleccionado!!.fechaAdquisicion }}</p>
+              <p>Valor: {{ registroSeleccionado!!.valor |  currency:'COP':'symbol':'1.0-0' }}</p>
+              <p>Estado: {{ registroSeleccionado!!.estado }}</p>
+          </div>
+
+        </div>
+        <button class="btn btn-info mx-1" (click)="registroSeleccionado = null">Cerrar</button>
+        <button class="btn btn-danger" (click)="darDeBaja(registroSeleccionado!!)">Dar de baja</button>
+      </div>
+    </div>
+  </div>
 </div>

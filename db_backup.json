@@ -1,7 +1,7 @@
 {
   "activos": [
     {
-      "id": "1",
+      "id": 1,
       "nombre": "Laptop Dell",
       "categoria": "Tecnología",
       "area": "TI",
@@ -11,7 +11,7 @@
       "estado": "Activo"
     },
     {
-      "id": "2",
+      "id": 2,
       "nombre": "Escritorio Roble",
       "categoria": "Mobiliario",
       "area": "Administración",
@@ -21,7 +21,7 @@
       "estado": "Trasladado"
     },
     {
-      "id": "3",
+      "id": 3,
       "nombre": "Televisor",
       "categoria": "Tecnología",
       "area": "Administración",
@@ -31,7 +31,7 @@
       "estado": "Activo"
     },
     {
-      "id": "4",
+      "id": 4,
       "nombre": "Impresora HP",
       "categoria": "Tecnología",
       "area": "Contabilidad",
@@ -41,7 +41,7 @@
       "estado": "Dañado"
     },
     {
-      "id": "5",
+      "id": 5,
       "nombre": "Silla Ergonómica",
       "categoria": "Mobiliario",
       "area": "RRHH",
@@ -51,7 +51,7 @@
       "estado": "Activo"
     },
     {
-      "id": "6",
+      "id": 6,
       "nombre": "Servidor Dell PowerEdge",
       "categoria": "Tecnología",
       "area": "TI",
@@ -61,7 +61,7 @@
       "estado": "Activo"
     },
     {
-      "id": "7",
+      "id": 7,
       "nombre": "Cafetera Industrial",
       "categoria": "Electrodoméstico",
       "area": "Cafetería",
@@ -71,7 +71,7 @@
       "estado": "Inactivo"
     },
     {
-      "id": "8",
+      "id": 8,
       "nombre": "Router Cisco",
       "categoria": "Tecnología",
       "area": "TI",
@@ -81,7 +81,7 @@
       "estado": "Activo"
     },
     {
-      "id": "9",
+      "id": 9,
       "nombre": "Proyector Epson",
       "categoria": "Tecnología",
       "area": "Comercial",
@@ -91,7 +91,7 @@
       "estado": "Activo"
     },
     {
-      "id": "10",
+      "id": 10,
       "nombre": "Archivador Metálico",
       "categoria": "Mobiliario",
       "area": "Contabilidad",
@@ -101,7 +101,7 @@
       "estado": "Trasladado"
     },
     {
-      "id": "11",
+      "id": 11,
       "nombre": "Teléfono IP",
       "categoria": "Tecnología",
       "area": "Soporte",
@@ -111,7 +111,7 @@
       "estado": "Activo"
     },
     {
-      "id": "12",
+      "id": 12,
       "nombre": "Monitor Samsung 24”",
       "categoria": "Tecnología",
       "area": "TI",
@@ -121,7 +121,7 @@
       "estado": "Dañado"
     },
     {
-      "id": "13",
+      "id": 13,
       "nombre": "Aire Acondicionado LG",
       "categoria": "Electrodoméstico",
       "area": "Sala de reuniones",
@@ -131,17 +131,17 @@
       "estado": "Inactivo"
     },
     {
-      "id": "14",
+      "id": 14,
       "nombre": "Lámpara de escritorio",
       "categoria": "Mobiliario",
       "area": "Administración",
       "custodio": "Carolina Díaz",
       "fechaAdquisicion": "2022-06-25",
       "valor": 90000,
-      "estado": "Inactivo"
+      "estado": "Activo"
     },
     {
-      "id": "15",
+      "id": 15,
       "nombre": "Tablet Samsung Galaxy",
       "categoria": "Tecnología",
       "area": "Comercial",
@@ -151,7 +151,7 @@
       "estado": "Activo"
     },
     {
-      "id": "16",
+      "id": 16,
       "nombre": "Impresora de etiquetas",
       "categoria": "Tecnología",
       "area": "Logística",
@@ -161,7 +161,7 @@
       "estado": "Activo"
     },
     {
-      "id": "17",
+      "id": 17,
       "nombre": "Silla ejecutiva negra",
       "categoria": "Mobiliario",
       "area": "Gerencia",
@@ -171,7 +171,7 @@
       "estado": "Activo"
     },
     {
-      "id": "18",
+      "id": 18,
       "nombre": "Laptop Lenovo ThinkPad",
       "categoria": "Tecnología",
       "area": "TI",
@@ -181,7 +181,7 @@
       "estado": "Activo"
     },
     {
-      "id": "19",
+      "id": 19,
       "nombre": "Proyector portátil",
       "categoria": "Tecnología",
       "area": "Comercial",
@@ -191,7 +191,7 @@
       "estado": "Trasladado"
     },
     {
-      "id": "20",
+      "id": 20,
       "nombre": "Mesa de juntas",
       "categoria": "Mobiliario",
       "area": "Sala de reuniones",
@@ -201,7 +201,7 @@
       "estado": "Activo"
     },
     {
-      "id": "21",
+      "id": 21,
       "nombre": "PC de escritorio HP",
       "categoria": "Tecnología",
       "area": "Contabilidad",
@@ -211,7 +211,7 @@
       "estado": "Activo"
     },
     {
-      "id": "22",
+      "id": 22,
       "nombre": "Silla visitante",
       "categoria": "Mobiliario",
       "area": "Recepción",
@@ -221,7 +221,7 @@
       "estado": "Inactivo"
     },
     {
-      "id": "23",
+      "id": 23,
       "nombre": "Switch de red",
       "categoria": "Tecnología",
       "area": "TI",
@@ -231,7 +231,7 @@
       "estado": "Activo"
     },
     {
-      "id": "24",
+      "id": 24,
       "nombre": "Panel solar portátil",
       "categoria": "Tecnología",
       "area": "Logística",
@@ -241,7 +241,7 @@
       "estado": "Activo"
     },
     {
-      "id": "25",
+      "id": 25,
       "nombre": "Nevera ejecutiva",
       "categoria": "Electrodoméstico",
       "area": "Gerencia",
@@ -251,7 +251,7 @@
       "estado": "Inactivo"
     },
     {
-      "id": "26",
+      "id": 26,
       "nombre": "Scanner Brother",
       "categoria": "Tecnología",
       "area": "Archivo",
@@ -261,7 +261,7 @@
       "estado": "Activo"
     },
     {
-      "id": "27",
+      "id": 27,
       "nombre": "Silla de ruedas",
       "categoria": "Médico",
       "area": "Enfermería",
@@ -271,7 +271,7 @@
       "estado": "Activo"
     },
     {
-      "id": "28",
+      "id": 28,
       "nombre": "Dispensador de agua",
       "categoria": "Electrodoméstico",
       "area": "Cafetería",
@@ -281,7 +281,7 @@
       "estado": "Dañado"
     },
     {
-      "id": "29",
+      "id": 29,
       "nombre": "Carro de carga",
       "categoria": "Logística",
       "area": "Bodega",
@@ -291,7 +291,7 @@
       "estado": "Activo"
     },
     {
-      "id": "30",
+      "id": 30,
       "nombre": "Extintor CO2",
       "categoria": "Seguridad",
       "area": "General",
@@ -301,7 +301,7 @@
       "estado": "Activo"
     },
     {
-      "id": "31",
+      "id": 31,
       "nombre": "Computador All-in-One",
       "categoria": "Tecnología",
       "area": "Soporte",
@@ -311,7 +311,7 @@
       "estado": "Activo"
     },
     {
-      "id": "32",
+      "id": 32,
       "nombre": "Micrófono inalámbrico",
       "categoria": "Tecnología",
       "area": "Comunicaciones",
@@ -321,7 +321,7 @@
       "estado": "Activo"
     },
     {
-      "id": "33",
+      "id": 33,
       "nombre": "Mesa auxiliar",
       "categoria": "Mobiliario",
       "area": "Recepción",
@@ -331,7 +331,7 @@
       "estado": "Inactivo"
     },
     {
-      "id": "34",
+      "id": 34,
       "nombre": "Laptop HP Pavilion",
       "categoria": "Tecnología",
       "area": "Comercial",
@@ -341,7 +341,7 @@
       "estado": "Activo"
     },
     {
-      "id": "35",
+      "id": 35,
       "nombre": "Ventilador de torre",
       "categoria": "Electrodoméstico",
       "area": "Sala de reuniones",
@@ -351,7 +351,7 @@
       "estado": "Dañado"
     },
     {
-      "id": "36",
+      "id": 36,
       "nombre": "Disco duro externo",
       "categoria": "Tecnología",
       "area": "TI",
@@ -361,7 +361,7 @@
       "estado": "Activo"
     },
     {
-      "id": "37",
+      "id": 37,
       "nombre": "Scanner portátil",
       "categoria": "Tecnología",
       "area": "Archivo",
@@ -371,7 +371,7 @@
       "estado": "Activo"
     },
     {
-      "id": "38",
+      "id": 38,
       "nombre": "Silla giratoria",
       "categoria": "Mobiliario",
       "area": "Administración",
@@ -381,7 +381,7 @@
       "estado": "Activo"
     },
     {
-      "id": "39",
+      "id": 39,
       "nombre": "Tablet iPad",
       "categoria": "Tecnología",
       "area": "Gerencia",
@@ -391,7 +391,7 @@
       "estado": "Activo"
     },
     {
-      "id": "40",
+      "id": 40,
       "nombre": "Impresora multifuncional",
       "categoria": "Tecnología",
       "area": "Contabilidad",
@@ -400,10 +400,11 @@
       "valor": 890000,
       "estado": "Activo"
     }
-  ],
+  ]
+,
   "movimientos": [
     {
-      "id": "1",
+      "id": 1,
       "activoId": 1,
       "fecha": "2023-03-01",
       "accion": "traslado",
