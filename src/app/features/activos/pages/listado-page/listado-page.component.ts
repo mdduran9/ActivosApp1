@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivoService } from '../../services/activo.service';
+import {Activo} from '../../models/user.model';
 
 @Component({
   selector: 'app-listado-page',
@@ -9,20 +10,22 @@ import { ActivoService } from '../../services/activo.service';
 })
 
 export class ListadoPageComponent implements OnInit {
-  listado:Array<any> = []
+
+  listado:Array<Activo> = []
+
   constructor (private activoService:ActivoService){}
   ngOnInit(): void {
     this.activoService.getActivos().subscribe({
       next: (data) => {
         this.listado = data;
-        
+
       },
       error: (err) => {
-       
+
       }
     });
   }
-  
+
 
 }
 
