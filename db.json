@@ -134,8 +134,8 @@
       "id": "14",
       "nombre": "Lámpara de escritorio",
       "categoria": "Mobiliario",
-      "area": "Administración",
-      "custodio": "Carolina Díaz",
+      "area": "Enfermería",
+      "custodio": "Tatiana Mejía",
       "fechaAdquisicion": "2022-06-25",
       "valor": 90000,
       "estado": "Inactivo"
@@ -298,7 +298,7 @@
       "custodio": "Juan Martínez",
       "fechaAdquisicion": "2023-06-01",
       "valor": 150000,
-      "estado": "Activo"
+      "estado": "Inactivo"
     },
     {
       "id": "31",
@@ -408,6 +408,178 @@
       "fecha": "2023-03-01",
       "accion": "traslado",
       "destino": "Sala de juntas"
+    }
+  ],
+  "areas": [
+    {
+      "nombre": "TI"
+    },
+    {
+      "nombre": "Administración"
+    },
+    {
+      "nombre": "Contabilidad"
+    },
+    {
+      "nombre": "RRHH"
+    },
+    {
+      "nombre": "Cafetería"
+    },
+    {
+      "nombre": "Comercial"
+    },
+    {
+      "nombre": "Soporte"
+    },
+    {
+      "nombre": "Sala de reuniones"
+    },
+    {
+      "nombre": "Logística"
+    },
+    {
+      "nombre": "Gerencia"
+    },
+    {
+      "nombre": "Recepción"
+    },
+    {
+      "nombre": "Archivo"
+    },
+    {
+      "nombre": "Enfermería"
+    },
+    {
+      "nombre": "Bodega"
+    },
+    {
+      "nombre": "General"
+    },
+    {
+      "nombre": "Comunicaciones"
+    }
+  ],
+  "custodios": [
+    {
+      "nombre": "Carlos Pérez"
+    },
+    {
+      "nombre": "Luisa Gómez"
+    },
+    {
+      "nombre": "Ashlam Duran"
+    },
+    {
+      "nombre": "Andrea Ruiz"
+    },
+    {
+      "nombre": "Miguel Salazar"
+    },
+    {
+      "nombre": "Diana Pardo"
+    },
+    {
+      "nombre": "Jorge Medina"
+    },
+    {
+      "nombre": "Camila Ríos"
+    },
+    {
+      "nombre": "Oscar Jiménez"
+    },
+    {
+      "nombre": "Sofía Vargas"
+    },
+    {
+      "nombre": "Iván Morales"
+    },
+    {
+      "nombre": "Laura Gómez"
+    },
+    {
+      "nombre": "Ricardo Fuentes"
+    },
+    {
+      "nombre": "Carolina Díaz"
+    },
+    {
+      "nombre": "Héctor Beltrán"
+    },
+    {
+      "nombre": "Tatiana Mejía"
+    },
+    {
+      "nombre": "Esteban Duarte"
+    },
+    {
+      "nombre": "Diana Rodríguez"
+    },
+    {
+      "nombre": "Julián Herrera"
+    },
+    {
+      "nombre": "Claudia Romero"
+    },
+    {
+      "nombre": "Paola Gutiérrez"
+    },
+    {
+      "nombre": "Valentina Cárdenas"
+    },
+    {
+      "nombre": "Jhon Fredy Gómez"
+    },
+    {
+      "nombre": "Natalia Duarte"
+    },
+    {
+      "nombre": "Mauricio López"
+    },
+    {
+      "nombre": "Elena Franco"
+    },
+    {
+      "nombre": "Lina Pérez"
+    },
+    {
+      "nombre": "Luis Restrepo"
+    },
+    {
+      "nombre": "Mariana Téllez"
+    },
+    {
+      "nombre": "Juan Martínez"
+    },
+    {
+      "nombre": "Daniela Torres"
+    },
+    {
+      "nombre": "Santiago Vélez"
+    },
+    {
+      "nombre": "Jessica Romero"
+    },
+    {
+      "nombre": "Pedro Carrillo"
+    },
+    {
+      "nombre": "Clara Moreno"
+    },
+    {
+      "nombre": "Fernando Londoño"
+    },
+    {
+      "nombre": "Mónica Chávez"
+    },
+    {
+      "nombre": "Eduardo Niño"
+    },
+    {
+      "nombre": "Margarita López"
+    },
+    {
+      "nombre": "Ramiro Rodríguez"
     }
   ]
 }

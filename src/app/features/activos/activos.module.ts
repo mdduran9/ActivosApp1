@@ -8,11 +8,13 @@ import {MatIcon} from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FormPageComponent } from './pages/form-page/form-page.component';
+import {AreasService} from '../areas/services/areas.service';
 
 
 @NgModule ({
   providers: [
     ActivoService,
+    AreasService,
     provideHttpClient()
   ],
   imports: [
