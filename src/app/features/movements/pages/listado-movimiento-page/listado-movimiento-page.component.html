@@ -1,0 +1,42 @@
+<div class="container mt-4">
+  <h2 class="mb-3">Movimientos</h2>
+
+  <div class="row mb-3">
+    <table class="table table-striped table-bordered">
+      <thead class="table-dark">
+      <tr>
+        <th class="pointer" >ID
+
+        </th>
+        <th class="pointer" >Nombre
+
+        </th>
+        <th class="pointer">Categoría
+
+        </th>
+        <th class="pointer" >Área
+
+        </th>
+        <th class="pointer" >Custodio
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let mov of listado">
+        <td>{{ mov.id }}</td>
+        <td>{{ mov.activo }}</td>
+        <td>{{ mov.fecha | date:'yyyy-MM-dd' }}</td>
+        <td>{{ mov.accion }}</td>
+        <td>{{ mov.destino }}</td>
+      </tr>
+      </tbody>
+    </table>
+    <app-pagination [limite]="limite"
+                    [paginaActual]="paginaActual"
+                    [total]="totalActivos"
+                    (paginaCambiada)="onPaginaCambiada($event)"
+    />
+
+
+  </div>
+</div>

@@ -8,7 +8,7 @@
       <input type="text" class="form-control" [(ngModel)]="search" (keyup)="obtenerActivos()" placeholder="Filtros..."/>
     </div>
     <div class="col-md-2 mb-2 text-end">
-      <button class="btn btn-success">Crear Activo</button>
+      <a [routerLink]="['/activos/nuevo']" class="btn btn-success">Crear Activo</a>
     </div>
   </div>
 
@@ -56,9 +56,9 @@
         <td>{{ activo.valor | currency:'COP':'symbol':'1.0-0' }}</td>
         <td>{{ activo.estado }}</td>
         <td>
-          <button class="btn btn-warning btn-sm ">
+          <a  [routerLink]="['/activos/editar/'+activo.id]" class="btn btn-warning btn-sm ">
             <mat-icon class="icon-display">edit</mat-icon>
-          </button>
+          </a>
           <button *ngIf="activo.estado != 'Inactivo'" (click)="abrirModalBaja(activo)" class="btn btn-danger btn-sm mx-1">
             <mat-icon class="icon-display">delete</mat-icon>
           </button>

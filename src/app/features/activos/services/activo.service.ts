@@ -20,12 +20,16 @@ export class ActivoService {
     return this.http.post<Activo>(this.apiUrl, data);
   }
 
-  editarActivo(id: number, data: Activo): Observable<Activo> {
+  editarActivo(id: string, data: Activo): Observable<Activo> {
     return this.http.put<Activo>(`${this.apiUrl}/${id}`, data);
   }
 
   eliminarActivo(id: number): Observable<Activo> {
     return this.http.delete<Activo>(`${this.apiUrl}/${id}`);
+  }
+
+  getActivoPorId(id: string): Observable<Activo> {
+    return this.http.get<Activo>(`${this.apiUrl}/${id}`);
   }
 
   getActivosPagina(

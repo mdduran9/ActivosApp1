@@ -1,0 +1,88 @@
+<div class="container">
+  <h2>{{ isEditMode ? 'Editar Activo' : 'Crear Nuevo Activo' }}</h2>
+
+  <form [formGroup]="activoForm" (ngSubmit)="onSubmit()" class="form-container">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Nombre</mat-label>
+      <input matInput formControlName="nombre" placeholder="Ingrese el nombre del activo">
+      <mat-error *ngIf="activoForm.get('nombre')?.hasError('required')">
+        {{ getErrorMessage('nombre') }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Categoría</mat-label>
+      <mat-select formControlName="categoria">
+        <mat-option value="Mobiliario">Mobiliario</mat-option>
+        <mat-option value="Equipo de Cómputo">Equipo de Cómputo</mat-option>
+        <mat-option value="Equipo Electrónico">Equipo Electrónico</mat-option>
+        <mat-option value="Vehículos">Vehículos</mat-option>
+      </mat-select>
+      <mat-error *ngIf="activoForm.get('categoria')?.hasError('required')">
+        {{ getErrorMessage('categoria') }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Área</mat-label>
+      <mat-select formControlName="area">
+        <mat-option *ngFor="let area of areas" [value]="area.nombre">
+          {{ area.nombre }}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="activoForm.get('area')?.hasError('required')">
+        {{ getErrorMessage('area') }}
+      </mat-error>
+    </mat-form-field>
+
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Custodio</mat-label>
+      <mat-select formControlName="custodio">
+        <mat-option *ngFor="let custodio of costodios" [value]="custodio.nombre">
+          {{ custodio.nombre }}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="activoForm.get('custodio')?.hasError('required')">
+        {{ getErrorMessage('custodio') }}
+      </mat-error>
+    </mat-form-field>
+
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Fecha de Adquisición</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="fechaAdquisicion">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+      <mat-error *ngIf="activoForm.get('fechaAdquisicion')?.hasError('required')">
+        {{ getErrorMessage('fechaAdquisicion') }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Valor</mat-label>
+      <input matInput type="number" formControlName="valor" placeholder="Ingrese el valor">
+      <span matPrefix>$&nbsp;</span>
+      <mat-error *ngIf="activoForm.get('valor')?.hasError('required')">
+        {{ getErrorMessage('valor') }}
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Estado</mat-label>
+      <mat-select formControlName="estado">
+        <mat-option value="Activo">Activo</mat-option>
+        <mat-option value="Inactivo">Inactivo</mat-option>
+        <mat-option value="En Reparación">En Reparación</mat-option>
+        <mat-option value="Trasladado">Trasladado</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="button-container">
+      <button mat-button type="button" routerLink="/activos/listar">Cancelar</button>
+      <button mat-raised-button color="primary" type="submit" [disabled]="activoForm.invalid">
+        {{ isEditMode ? 'Actualizar' : 'Crear' }}
+      </button>
+    </div>
+  </form>
+</div>

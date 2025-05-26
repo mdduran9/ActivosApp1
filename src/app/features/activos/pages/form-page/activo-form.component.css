@@ -1,0 +1,52 @@
+.container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+mat-form-field {
+  margin-bottom: 8px;
+}
+
+/* Estilos para campos con error */
+mat-form-field.ng-invalid.ng-touched {
+  margin-bottom: 16px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button-container button {
+    width: 100%;
+  }
+} 

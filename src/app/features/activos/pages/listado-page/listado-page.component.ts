@@ -5,6 +5,9 @@ import {Area} from '../../../areas/models/area.model';
 import {AreasService} from '../../../areas/services/areas.service';
 import Swal from 'sweetalert2';
 import {CustodiosService} from '../../../custodios/services/custodios.service';
+import {MovimientosService} from '../../../movements/services/movimientos.service';
+import {Movimiento} from '../../../movements/models/movimiento.model';
+import {DatePipe} from '@angular/common';
 
 @Component({
   selector: 'app-listado-page',
@@ -33,7 +36,7 @@ export class ListadoPageComponent implements OnInit {
   totalActivos: number = 0
 
   constructor(private activoService: ActivoService, private areasService: AreasService,
-              private custodiosService: CustodiosService) {
+              private custodiosService: CustodiosService, private movimientoService: MovimientosService) {
   }
 
   ngOnInit(): void {
@@ -130,7 +133,7 @@ export class ListadoPageComponent implements OnInit {
       return;
     }
 
-    if(!this.costodioSeleccionado){
+    if (!this.costodioSeleccionado) {
 
       Swal.fire({
         title: '¡Error!',
@@ -147,6 +150,24 @@ export class ListadoPageComponent implements OnInit {
 
     this.activoService.editarActivo(mover.id, mover).subscribe({
       next: (data) => {
+
+        let movimiento: Movimiento = {
+          id: new Date().getTime().toString(),
+          accion: "traslado",
+          activo: mover.nombre,
+          fecha: new Date().toISOString().split('T')[0].toString(),
+          destino: this.areaSeleccionada,
+        };
+
+        this.movimientoService.crearActivo(movimiento).subscribe({
+          next: (data) => {
+
+          },
+          error: (err) => {
+            console.error('Error al cargar activos', err);
+          }
+        });
+
         this.obtenerActivos()
         this.registroMovimiento = null
 

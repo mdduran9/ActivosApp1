@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {ActivosModule} from './features/activos/activos.module';
 import { MatIconModule } from '@angular/material/icon';
+import { ListadoMovimientoPageComponent } from './features/movements/pages/listado-movimiento-page/listado-movimiento-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    ListadoMovimientoPageComponent,
   ],
   imports: [
     BrowserModule,

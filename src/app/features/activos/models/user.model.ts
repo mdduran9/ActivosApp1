@@ -1,7 +1,7 @@
 
 
 export interface Activo {
-  id: number;
+  id: string;
   nombre: string;
   categoria: string;
   area: string;

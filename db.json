@@ -399,187 +399,260 @@
       "fechaAdquisicion": "2022-02-22",
       "valor": 890000,
       "estado": "Activo"
+    },
+    {
+      "id": "1748215601672",
+      "nombre": "Andres granados",
+      "categoria": "Mobiliario",
+      "area": "Enfermería",
+      "custodio": "Héctor Beltrán",
+      "fechaAdquisicion": "2025-05-21T05:00:00.000Z",
+      "valor": 12515,
+      "estado": "En Reparación"
     }
   ],
   "movimientos": [
     {
       "id": "1",
-      "activoId": 1,
+      "activo": "1",
       "fecha": "2023-03-01",
       "accion": "traslado",
       "destino": "Sala de juntas"
+    },
+    {
+      "id": "1748217563328",
+      "accion": "traslado",
+      "activo": "Andres granados",
+      "fecha": "2025-05-25",
+      "destino": "Enfermería"
     }
   ],
   "areas": [
     {
-      "nombre": "TI"
+      "nombre": "TI",
+      "id": "59f3"
     },
     {
-      "nombre": "Administración"
+      "nombre": "Administración",
+      "id": "2cc1"
     },
     {
-      "nombre": "Contabilidad"
+      "nombre": "Contabilidad",
+      "id": "17c2"
     },
     {
-      "nombre": "RRHH"
+      "nombre": "RRHH",
+      "id": "62a2"
     },
     {
-      "nombre": "Cafetería"
+      "nombre": "Cafetería",
+      "id": "fda8"
     },
     {
-      "nombre": "Comercial"
+      "nombre": "Comercial",
+      "id": "9fe6"
     },
     {
-      "nombre": "Soporte"
+      "nombre": "Soporte",
+      "id": "9193"
     },
     {
-      "nombre": "Sala de reuniones"
+      "nombre": "Sala de reuniones",
+      "id": "ef8b"
     },
     {
-      "nombre": "Logística"
+      "nombre": "Logística",
+      "id": "8554"
     },
     {
-      "nombre": "Gerencia"
+      "nombre": "Gerencia",
+      "id": "0243"
     },
     {
-      "nombre": "Recepción"
+      "nombre": "Recepción",
+      "id": "2f24"
     },
     {
-      "nombre": "Archivo"
+      "nombre": "Archivo",
+      "id": "7e28"
     },
     {
-      "nombre": "Enfermería"
+      "nombre": "Enfermería",
+      "id": "5fa0"
     },
     {
-      "nombre": "Bodega"
+      "nombre": "Bodega",
+      "id": "77b9"
     },
     {
-      "nombre": "General"
+      "nombre": "General",
+      "id": "2845"
     },
     {
-      "nombre": "Comunicaciones"
+      "nombre": "Comunicaciones",
+      "id": "add2"
     }
   ],
   "custodios": [
     {
-      "nombre": "Carlos Pérez"
+      "nombre": "Carlos Pérez",
+      "id": "4754"
     },
     {
-      "nombre": "Luisa Gómez"
+      "nombre": "Luisa Gómez",
+      "id": "0e3d"
     },
     {
-      "nombre": "Ashlam Duran"
+      "nombre": "Ashlam Duran",
+      "id": "cef1"
     },
     {
-      "nombre": "Andrea Ruiz"
+      "nombre": "Andrea Ruiz",
+      "id": "60d3"
     },
     {
-      "nombre": "Miguel Salazar"
+      "nombre": "Miguel Salazar",
+      "id": "ba08"
     },
     {
-      "nombre": "Diana Pardo"
+      "nombre": "Diana Pardo",
+      "id": "ed92"
     },
     {
-      "nombre": "Jorge Medina"
+      "nombre": "Jorge Medina",
+      "id": "1dd6"
     },
     {
-      "nombre": "Camila Ríos"
+      "nombre": "Camila Ríos",
+      "id": "bb0c"
     },
     {
-      "nombre": "Oscar Jiménez"
+      "nombre": "Oscar Jiménez",
+      "id": "7a13"
     },
     {
-      "nombre": "Sofía Vargas"
+      "nombre": "Sofía Vargas",
+      "id": "9c12"
     },
     {
-      "nombre": "Iván Morales"
+      "nombre": "Iván Morales",
+      "id": "9076"
     },
     {
-      "nombre": "Laura Gómez"
+      "nombre": "Laura Gómez",
+      "id": "97a6"
     },
     {
-      "nombre": "Ricardo Fuentes"
+      "nombre": "Ricardo Fuentes",
+      "id": "2a34"
     },
     {
-      "nombre": "Carolina Díaz"
+      "nombre": "Carolina Díaz",
+      "id": "39ca"
     },
     {
-      "nombre": "Héctor Beltrán"
+      "nombre": "Héctor Beltrán",
+      "id": "4d18"
     },
     {
-      "nombre": "Tatiana Mejía"
+      "nombre": "Tatiana Mejía",
+      "id": "1844"
     },
     {
-      "nombre": "Esteban Duarte"
+      "nombre": "Esteban Duarte",
+      "id": "e484"
     },
     {
-      "nombre": "Diana Rodríguez"
+      "nombre": "Diana Rodríguez",
+      "id": "51bf"
     },
     {
-      "nombre": "Julián Herrera"
+      "nombre": "Julián Herrera",
+      "id": "aaad"
     },
     {
-      "nombre": "Claudia Romero"
+      "nombre": "Claudia Romero",
+      "id": "f693"
     },
     {
-      "nombre": "Paola Gutiérrez"
+      "nombre": "Paola Gutiérrez",
+      "id": "4db9"
     },
     {
-      "nombre": "Valentina Cárdenas"
+      "nombre": "Valentina Cárdenas",
+      "id": "4760"
     },
     {
-      "nombre": "Jhon Fredy Gómez"
+      "nombre": "Jhon Fredy Gómez",
+      "id": "3b0e"
     },
     {
-      "nombre": "Natalia Duarte"
+      "nombre": "Natalia Duarte",
+      "id": "1fb8"
     },
     {
-      "nombre": "Mauricio López"
+      "nombre": "Mauricio López",
+      "id": "55be"
     },
     {
-      "nombre": "Elena Franco"
+      "nombre": "Elena Franco",
+      "id": "cb0f"
     },
     {
-      "nombre": "Lina Pérez"
+      "nombre": "Lina Pérez",
+      "id": "aea2"
     },
     {
-      "nombre": "Luis Restrepo"
+      "nombre": "Luis Restrepo",
+      "id": "d5d2"
     },
     {
-      "nombre": "Mariana Téllez"
+      "nombre": "Mariana Téllez",
+      "id": "d3c7"
     },
     {
-      "nombre": "Juan Martínez"
+      "nombre": "Juan Martínez",
+      "id": "58e1"
     },
     {
-      "nombre": "Daniela Torres"
+      "nombre": "Daniela Torres",
+      "id": "0107"
     },
     {
-      "nombre": "Santiago Vélez"
+      "nombre": "Santiago Vélez",
+      "id": "678a"
     },
     {
-      "nombre": "Jessica Romero"
+      "nombre": "Jessica Romero",
+      "id": "fefd"
     },
     {
-      "nombre": "Pedro Carrillo"
+      "nombre": "Pedro Carrillo",
+      "id": "887a"
     },
     {
-      "nombre": "Clara Moreno"
+      "nombre": "Clara Moreno",
+      "id": "b4bc"
     },
     {
-      "nombre": "Fernando Londoño"
+      "nombre": "Fernando Londoño",
+      "id": "9642"
     },
     {
-      "nombre": "Mónica Chávez"
+      "nombre": "Mónica Chávez",
+      "id": "fbce"
     },
     {
-      "nombre": "Eduardo Niño"
+      "nombre": "Eduardo Niño",
+      "id": "c587"
     },
     {
-      "nombre": "Margarita López"
+      "nombre": "Margarita López",
+      "id": "b09b"
     },
     {
-      "nombre": "Ramiro Rodríguez"
+      "nombre": "Ramiro Rodríguez",
+      "id": "3234"
     }
   ]
 }
