@@ -401,14 +401,14 @@
       "estado": "Activo"
     },
     {
-      "id": "1748215601672",
       "nombre": "Andres granados",
       "categoria": "Mobiliario",
-      "area": "Enfermería",
+      "area": "Gerencia",
       "custodio": "Héctor Beltrán",
       "fechaAdquisicion": "2025-05-21T05:00:00.000Z",
-      "valor": 12515,
-      "estado": "En Reparación"
+      "valor": 20000,
+      "estado": "Inactivo",
+      "id": "1748215601672"
     }
   ],
   "movimientos": [
