@@ -31,14 +31,14 @@
       "estado": "Activo"
     },
     {
-      "id": "4",
       "nombre": "Impresora HP",
       "categoria": "Tecnología",
       "area": "Contabilidad",
       "custodio": "Andrea Ruiz",
       "fechaAdquisicion": "2020-11-12",
       "valor": 420000,
-      "estado": "Dañado"
+      "estado": "En Reparación",
+      "id": "4"
     },
     {
       "id": "5",
@@ -111,24 +111,24 @@
       "estado": "Activo"
     },
     {
-      "id": "12",
       "nombre": "Monitor Samsung 24”",
       "categoria": "Tecnología",
       "area": "TI",
       "custodio": "Laura Gómez",
       "fechaAdquisicion": "2021-07-30",
       "valor": 700000,
-      "estado": "Dañado"
+      "estado": "En Reparación",
+      "id": "12"
     },
     {
-      "id": "13",
       "nombre": "Aire Acondicionado LG",
       "categoria": "Electrodoméstico",
       "area": "Sala de reuniones",
       "custodio": "Ricardo Fuentes",
       "fechaAdquisicion": "2020-10-05",
       "valor": 2500000,
-      "estado": "Inactivo"
+      "estado": "En Reparación",
+      "id": "13"
     },
     {
       "id": "14",
@@ -271,14 +271,14 @@
       "estado": "Activo"
     },
     {
-      "id": "28",
       "nombre": "Dispensador de agua",
       "categoria": "Electrodoméstico",
       "area": "Cafetería",
       "custodio": "Luis Restrepo",
       "fechaAdquisicion": "2020-01-15",
       "valor": 300000,
-      "estado": "Dañado"
+      "estado": "En Reparación",
+      "id": "28"
     },
     {
       "id": "29",
@@ -341,14 +341,14 @@
       "estado": "Activo"
     },
     {
-      "id": "35",
       "nombre": "Ventilador de torre",
       "categoria": "Electrodoméstico",
       "area": "Sala de reuniones",
       "custodio": "Clara Moreno",
       "fechaAdquisicion": "2020-07-10",
       "valor": 200000,
-      "estado": "Dañado"
+      "estado": "En Reparación",
+      "id": "35"
     },
     {
       "id": "36",
@@ -401,14 +401,24 @@
       "estado": "Activo"
     },
     {
-      "nombre": "Andres granados",
+      "nombre": "Portatil Acer Chromebook Spin",
       "categoria": "Mobiliario",
-      "area": "Gerencia",
-      "custodio": "Héctor Beltrán",
+      "area": "TI",
+      "custodio": "Elena Franco",
       "fechaAdquisicion": "2025-05-21T05:00:00.000Z",
       "valor": 20000,
-      "estado": "Inactivo",
+      "estado": "Activo",
       "id": "1748215601672"
+    },
+    {
+      "id": "1748220173825",
+      "nombre": "Escritorio de PC",
+      "categoria": "Mobiliario",
+      "area": "Contabilidad",
+      "custodio": "Ashlam Duran",
+      "fechaAdquisicion": "2025-05-22T05:00:00.000Z",
+      "valor": 300000,
+      "estado": "Activo"
     }
   ],
   "movimientos": [
@@ -425,6 +435,13 @@
       "activo": "Andres granados",
       "fecha": "2025-05-25",
       "destino": "Enfermería"
+    },
+    {
+      "id": "1748219902752",
+      "accion": "traslado",
+      "activo": "Andres granados",
+      "fecha": "2025-05-26",
+      "destino": "TI"
     }
   ],
   "areas": [

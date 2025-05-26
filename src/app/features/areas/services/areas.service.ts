@@ -6,6 +6,8 @@ import {Area} from '../models/area.model';
 @Injectable({
   providedIn: 'root'
 })
+
+//Conexión a la API
 export class AreasService {
   private apiUrl = 'http://localhost:3000/areas';
 
